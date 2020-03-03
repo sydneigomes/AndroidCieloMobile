@@ -10,24 +10,7 @@ interface Navigator {
     /**
      * This plugin provides an API for taking pictures and for choosing images from the system's image library.
      */
-    androidCieloMobile: AndroidCieloMobile;
-}
-
-/**
- * This plugin provides an API for taking pictures and for choosing images from the system's image library.
- */
-interface AndroidCieloMobile {
-    /**
-     * Takes a photo using the camera, or retrieves a photo from the device's image gallery.
-     * @param cielomobileSuccess Success callback, that get the image
-     * as a base64-encoded String, or as the URI for the image file.
-     * @param cielomobileError Error callback, that get an error message.
-     * @param cielomobileOptions Optional parameters to customize the camera settings.
-     */
-    receberPagamento(
-        cielomobileSuccess: (data: string) => void,
-        cielomobileError: (message: string) => void,
-        cielomobileOptions?: CieloMobileOptions): void;
+    CieloMobile: CieloMobile;
 }
 
 interface CieloMobileOptions {
@@ -38,5 +21,9 @@ interface CieloMobileOptions {
     EmailCliente?: string;
 }
 
-declare var AndroidCieloMobile: {
+interface CieloMobile {
+    receberPagamento(cielomobileSuccess: (data: string) => void, cielomobileError: (message: string) => void, cielomobileOptions?: CieloMobileOptions): void;
+}
+
+declare var CieloMobile: {
 };

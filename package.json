@@ -1,25 +1,71 @@
 {
-  "name": "androidcielomobile",
-  "version": "1.0.0",
-  "description": "Pagamento no Android via CieloMobile",
-  "main": "AndroidCieloMobile.js",
-  "scripts": {
-    "test": "cielomobile.ping()"
+  "_args": [
+    [
+      "cordova-plugin-cielomobile@1.0.0",
+      "https://github.com/sydneigomes/AndroidCieloMobile"
+    ]
+  ],
+  "_from": "cordova-plugin-cielomobile@1.0.0",
+  "_id": "cordova-plugin-cielomobile@1.0.0",
+  "_inBundle": false,
+  "_location": "/cordova-plugin-cielomobile",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-cielomobile@1.0.0",
+    "name": "cordova-plugin-cielomobile",
+    "escapedName": "cordova-plugin-cielomobile",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_spec": "1.0.0",
+  "_where": "https://github.com/sydneigomes/AndroidCieloMobile",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/sydneigomes/AndroidCieloMobile/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-cielomobile",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "Cordova CieloMobile Plugin",
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova-android": ">=6.3.0"
+      },
+      "4.1.0": {
+        "cordova": ">=7.1.0",
+        "cordova-android": ">=6.3.0"
+      },
+      "5.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/sydneigomes/AndroidCieloMobile",
+  "keywords": [
+    "cordova",
+    "cielomobile",
+    "cielo",
+    "mobile",
+    "cordova-android"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-cielomobile",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sydneigomes/AndroidCieloMobile.git"
   },
-  "keywords": [
-    "android",
-    "cielo",
-    "mobile",
-    "cielomobile"
-  ],
-  "author": "Sydnei Gomes",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sydneigomes/AndroidCieloMobile/issues"
-  },
-  "homepage": "https://github.com/sydneigomes/AndroidCieloMobile#readme"
+  "types": "./types/index.d.ts",
+  "version": "1.0.0"
 }

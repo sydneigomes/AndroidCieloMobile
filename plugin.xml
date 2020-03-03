@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 // the beginning is pretty straightforward
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-sensor-manager" version="0.0.1">
+        id="cordova-plugin-cielomobile" version="0.0.1">
     <name>CieloMobile</name>
     <description>Pagamento via Cielo Mobile</description>
     <license>MIT</license>
@@ -10,7 +10,6 @@
     // the js-module is described the js file which will be our bridge to the native code
     // the src attribute is the path of the js file
     // the clobbers target is the json path where our module will be added to the window object
-    // eg.: window.cordova.plugins.sensorManager.{one function from the module}
     <js-module name="AndroidCieloMobile" src="www/AndroidCieloMobile.js">
         <clobbers target="br.com.bitseguros.AndroidCieloMobile" />
     </js-module>

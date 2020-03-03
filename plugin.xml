@@ -1,34 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-// the beginning is pretty straightforward
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-cielomobile" version="0.0.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-cielomobile" version="0.0.1">
     <name>CieloMobile</name>
     <description>Pagamento via Cielo Mobile</description>
     <license>MIT</license>
     <keywords>cordova,device,cielo,mobile,cielomobile</keywords>
-    
-    // the js-module is described the js file which will be our bridge to the native code
-    // the src attribute is the path of the js file
-    // the clobbers target is the json path where our module will be added to the window object
     <js-module name="AndroidCieloMobile" src="www/AndroidCieloMobile.js">
         <clobbers target="br.com.bitseguros.AndroidCieloMobile" />
     </js-module>
-
-    // the minimum cordova version which supports this plugin
     <engines>
         <engine name="cordova" version=">=3.6.0"></engine>
     </engines>
-
-    // details of our Android related files
-    // source-file is where our java file takes place in the plugin
-    // target-dir is the path where this file will be copied when you install this plugin
     <platform name="android">
-        <source-file src="src/android/AndroidCieloMobile.java"
-                     target-dir="src/br/com/bit/androidcielomobile"></source-file>
-
+        <source-file src="src/android/AndroidCieloMobile.java" target-dir="src/br/com/bit/androidcielomobile"></source-file>
         <config-file target="res/xml/config.xml" parent="/*">
-	// the feature describes the Java class which we want to use
-	// the value is the class path where this class can be found
             <feature name="AndroidCieloMobile">
                 <param name="android-package" value="br.com.bit.androidcielomobile.AndroidCieloMobile" />
             </feature>

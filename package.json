@@ -1,0 +1,25 @@
+{
+  "name": "androidcielomobile",
+  "version": "1.0.0",
+  "description": "Pagamento no Android via CieloMobile",
+  "main": "AndroidCieloMobile.js",
+  "scripts": {
+    "test": "cielomobile.ping()"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sydneigomes/AndroidCieloMobile.git"
+  },
+  "keywords": [
+    "android",
+    "cielo",
+    "mobile",
+    "cielomobile"
+  ],
+  "author": "Sydnei Gomes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sydneigomes/AndroidCieloMobile/issues"
+  },
+  "homepage": "https://github.com/sydneigomes/AndroidCieloMobile#readme"
+}

@@ -10,7 +10,7 @@ interface Navigator {
     /**
      * This plugin provides an API for taking pictures and for choosing images from the system's image library.
      */
-    CieloMobile: AndroidCieloMobile;
+    androidCieloMobile: AndroidCieloMobile;
 }
 
 /**
@@ -32,10 +32,10 @@ interface AndroidCieloMobile {
 
 interface CieloMobileOptions {
     urlCallBack?: string;
-    ValorOperacao?: number;
+    ValorOperacao?: string;
     CodigoOperacao?: string;
     NomePlano?: string;
-    EmailCliente?: number;
+    EmailCliente?: string;
 }
 
 declare var AndroidCieloMobile: {
